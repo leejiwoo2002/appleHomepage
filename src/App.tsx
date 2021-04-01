@@ -1,23 +1,19 @@
-import React  from 'react';
-import "./App.css";
+import React from 'react';
+import Header from '@components/header';
+import styled from 'styled-components';
 
-function App():JSX.Element {
+const Container = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+`;
+
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Header></Header>
+    </Container>
   );
 }
 
