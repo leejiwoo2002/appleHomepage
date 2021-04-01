@@ -8,6 +8,7 @@ module.exports = {
   webpack: override(
     addWebpackAlias({
       ['@components']: path.resolve(__dirname, 'src/components/'),
+      ['@resources']: path.resolve(__dirname, 'src/resources/'),
     })
   ),
 };
