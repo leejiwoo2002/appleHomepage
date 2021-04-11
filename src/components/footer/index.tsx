@@ -17,19 +17,6 @@ const Section = styled.div`
 `;
 
 function Footer(): JSX.Element {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  function handleResize() {
-    setScreenWidth(window.innerWidth);
-  }
-
   return (
     <Container>
       <Section>

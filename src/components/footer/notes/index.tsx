@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -25,19 +25,6 @@ const LinkLabel = styled.a`
 `;
 
 function Notes(): JSX.Element {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  function handleResize() {
-    setScreenWidth(window.innerWidth);
-  }
-
   return (
     <Container>
       <span>
