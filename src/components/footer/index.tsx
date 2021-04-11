@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import Notes from './notes';
+import Note from './note';
 
 const Container = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ function Footer(): JSX.Element {
   return (
     <Container>
       <Section>
-        <Notes></Notes>
+        <Note></Note>
       </Section>
     </Container>
   );

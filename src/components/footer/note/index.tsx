@@ -24,7 +24,7 @@ const LinkLabel = styled.a`
   }
 `;
 
-function Notes(): JSX.Element {
+function Note(): JSX.Element {
   return (
     <Container>
       <span>
@@ -43,4 +43,4 @@ function Notes(): JSX.Element {
   );
 }
 
-export default Notes;
+export default Note;
