@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Note from './note';
+import Directory from './directory';
 
 const Container = styled.div`
   width: 100%;
   background-color: rgb(245, 245, 247);
   display: flex;
   justify-content: center;
+  min-width: 320px;
 `;
 
 const Section = styled.div`
@@ -21,6 +23,7 @@ function Footer(): JSX.Element {
     <Container>
       <Section>
         <Note></Note>
+        <Directory></Directory>
       </Section>
     </Container>
   );
