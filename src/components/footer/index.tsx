@@ -15,7 +15,7 @@ const Section = styled.div`
   box-sizing: border-box;
   padding-left: 22px;
   padding-right: 22px;
-  width: 980px;
+  max-width: 980px;
 `;
 
 function Footer(): JSX.Element {
