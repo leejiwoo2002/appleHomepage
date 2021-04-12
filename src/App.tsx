@@ -11,16 +11,22 @@ const Container = styled.div`
   flex-flow: column;
 `;
 
+const ContentArea = styled.div`
+  margin-top: 44px;
+`;
+
 function App(): JSX.Element {
   return (
     <Container>
       <Header></Header>
-      <Tile
-        title="iPhone 12"
-        description="스피드 그 이상의 스피드"
-        price="가격은 ₩950,000부터(보상 판매 미적용)"
-      ></Tile>
-      <Footer></Footer>
+      <ContentArea>
+        <Tile
+          title="iPhone 12"
+          description="스피드 그 이상의 스피드"
+          price="가격은 ₩950,000부터(보상 판매 미적용)"
+        ></Tile>
+        <Footer></Footer>
+      </ContentArea>
     </Container>
   );
 }

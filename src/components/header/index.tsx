@@ -13,7 +13,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z:index: 1;
+  z-index: 1;
+  position: fixed;
   min-width: 320px;
 
   @media (max-width: 800px) {
@@ -47,6 +48,14 @@ const NavButton = styled.a`
     cursor: pointer;
     opacity: 1;
   }
+`;
+
+const BigAppleLogo = styled.a`
+  width: 18px;
+  height: 48px;
+  background-size: 18px 48px;
+  background-repeat: no-repeat;
+  background-image: url(https://www.apple.com/ac/globalnav/6/ko_KR/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_small.svg);
 `;
 
 function Header(): JSX.Element {
@@ -88,7 +97,7 @@ function Header(): JSX.Element {
       <>
         <NavButton>목록</NavButton>
         <NavButton>
-          <AppleLogo></AppleLogo>
+          <BigAppleLogo></BigAppleLogo>
         </NavButton>
         <NavButton>
           <BagLogo></BagLogo>
